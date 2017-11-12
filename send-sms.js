@@ -4,9 +4,9 @@ function sendMessage(useData) {
   const postJson = {
     'api_key': '6852454f',
     'api_secret': '51313ad58fceb7ca',
-    'to': '886911199304',
+    'to': useData.tel,
     'from': 'alxtz',
-    'text': `Play the game ${useData.gameName} !\nURL: \n${useData.gamePageURL}\n`
+    'text': `Play the game ${useData.gameName} !\nURL: \n${useData.gamePageURL} \n`
   }
 
   request({
