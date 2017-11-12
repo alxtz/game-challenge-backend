@@ -4,11 +4,17 @@
   "description": "try the test the sms send API",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.16.2",
+    "request": "^2.83.0",
     "springedge": "^1.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
   }
 }
