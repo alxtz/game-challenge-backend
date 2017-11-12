@@ -18,4 +18,4 @@ app.post('/send', (reqs, resp) => {
   resp.send('send it!\n')
 })
 
-app.listen(80, () => console.log('server listening on localhost:3000'))
+app.listen(80, () => console.log('server listening on localhost:80'))
