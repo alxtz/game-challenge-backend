@@ -8,6 +8,10 @@ app.use(bodyParser.json())
 
 const sender = require('./send-sms')
 
+app.get('/', (reqs, resp) => {
+  resp.send('the server is running')
+})
+
 app.post('/send', (reqs, resp) => {
   console.log('some one wants to send with', reqs.body)
   sender.sendMessage(reqs.body)
