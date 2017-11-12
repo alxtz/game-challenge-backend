@@ -3,7 +3,7 @@ const request = require('request')
 function sendMessage(useData) {
   const postJson = {
     'api_key': '6852454f',
-    'api_secret': '51313ad58fceb7ca',
+    'api_secret': process.env.API_SECRET,
     'to': useData.tel,
     'from': 'alxtz',
     'text': `Play the game ${useData.gameName} !\nURL: \n${useData.gamePageURL} \n`
